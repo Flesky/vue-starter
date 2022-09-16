@@ -1,5 +1,5 @@
 {
-  "name": "starter",
+  "name": "vue-starter",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite --host",
@@ -14,6 +14,7 @@
   "dependencies": {
     "@headlessui/vue": "^1.7.2",
     "@vueuse/core": "^9.2.0",
+    "@vueuse/head": "^0.7.11",
     "vue": "^3.2.38",
     "vue-router": "^4.1.5"
   },
