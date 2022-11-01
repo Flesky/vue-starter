@@ -7,6 +7,8 @@ import Layouts from 'vite-plugin-vue-layouts'
 import Components from 'unplugin-vue-components/vite'
 import { HeadlessUiResolver } from 'unplugin-vue-components/resolvers'
 import AutoImport from 'unplugin-auto-import/vite'
+import Icons from 'unplugin-icons/vite'
+import IconsResolver from 'unplugin-icons/resolver'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -17,6 +19,10 @@ export default defineConfig({
     Components({
       resolvers: [
         HeadlessUiResolver(),
+        IconsResolver(
+          // TODO: Configure your icons
+          // https://github.com/antfu/unplugin-icons
+        ),
       ],
     }),
     AutoImport({
@@ -28,6 +34,7 @@ export default defineConfig({
       ],
       vueTemplate: true,
     }),
+    Icons({}),
   ],
   resolve: {
     alias: {
