@@ -3,7 +3,6 @@ import { URL, fileURLToPath } from 'node:url'
 import { defineConfig } from 'vite'
 import VueRouter from 'unplugin-vue-router/vite'
 import vue from '@vitejs/plugin-vue'
-import Layouts from 'vite-plugin-vue-layouts'
 import Components from 'unplugin-vue-components/vite'
 import { HeadlessUiResolver } from 'unplugin-vue-components/resolvers'
 import AutoImport from 'unplugin-auto-import/vite'
@@ -16,7 +15,6 @@ export default defineConfig({
   plugins: [
     VueRouter(),
     vue(),
-    Layouts(),
     Components({
       resolvers: [
         HeadlessUiResolver(),
